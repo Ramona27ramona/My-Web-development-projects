@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSense Monitor </title>
+    <link rel="stylesheet" href="programari.css">
+</head>
+
+<title>Programari pacienti</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    input[type="text"], select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Programari pacienti</h2>
+    <form action="procesare_formular.php" method="post">
+        <label for="nume">Nume:</label>
+        <input type="text" id="nume" name="nume" required>
+        
+        <label for="telefon">Telefon:</label>
+        <input type="text" id="telefon" name="telefon" required>
+
+        <label for="specializare">Specializare:</label>
+        <select id="specializare" name="specializare" required>
+            <option value="">Alegeți specializarea</option>
+            <option value="medic de familie">Medic de Familie</option>
+            <option value="cardiolog">Cardiolog</option>
+            <option value="dermatolog">Dermatolog</option>
+            <!-- Adăugați alte opțiuni de specializare aici -->
+        </select>
+
+        <label for="data">Data preferată:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="mesaj">Mesaj suplimentar (opțional):</label>
+        <textarea id="mesaj" name="mesaj" rows="4"></textarea>
+
+        <input type="submit" value="Trimiteți Programarea">
+    </form>
+</div>
+
+</body>
+</html>

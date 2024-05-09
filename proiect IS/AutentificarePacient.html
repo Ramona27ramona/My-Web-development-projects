@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autentificare</title>
+  <link rel="stylesheet" href="AutentificarePacient.css">
+</head>
+
+<style>
+  body{
+     text-align: center;
+ 
+ }
+</style>
+
+<body>
+  <br><br><br><br><br><br><br><br><body> 
+    <h1><span style="color: rgba(245, 245, 245, 0.722);">
+<body>
+
+  <a href="nou roxi is.html"></a>
+  <div class="container">
+    <h2>Autentificare</h2>
+    <select id="accountType">
+      <option value="patient">Pacient</option>
+      <option value="doctor">Medic</option>
+    </select>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Adresă de email" minlength="6" required>
+      <input type="password" id="password" placeholder="Parolă"minlength="6" required>
+      <div id="doctorField" style="display: none;">
+        <input type="text" id="parafa" placeholder="Număr de parafă al medicului">
+      </div>
+      <button type="submit">Autentificare</button>
+      
+
+    </form>
+  </div>
+  <script src="AutentificarePacient.js"></script>
+
+
+</body>
+</html>
